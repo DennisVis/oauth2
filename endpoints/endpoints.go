@@ -155,6 +155,18 @@ var PayPalSandbox = oauth2.Endpoint{
 	TokenURL: "https://api.sandbox.paypal.com/v1/identity/openidconnect/tokenservice",
 }
 
+// Revolut is the endpoint for Revolut.
+var Revolut = oauth2.Endpoint{
+	AuthURL:  "https://business.revolut.com/app-confirm",
+	TokenURL: "https://b2b.revolut.com/api/1.0/auth/token",
+}
+
+// RevolutSanbox is the endpoint for the Revolut sanbox environment.
+var RevolutSanbox = oauth2.Endpoint{
+	AuthURL:  "https://sandbox-business.revolut.com/app-confirm",
+	TokenURL: "https://sandbox-b2b.revolut.com/api/1.0/auth/token",
+}
+
 // Slack is the endpoint for Slack.
 var Slack = oauth2.Endpoint{
 	AuthURL:  "https://slack.com/oauth/authorize",
